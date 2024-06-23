@@ -1,0 +1,61 @@
+=== Run information ===
+
+Scheme:       weka.associations.Apriori -N 10 -T 0 -C 0.9 -D 0.05 -U 1.0 -M 0.1 -S -1.0 -c -1
+Relation:     basket_analysis
+Instances:    719
+Attributes:   16
+              apple
+              bread
+              butter
+              cheese
+              corn
+              dill
+              eggs
+              ice cream
+              kidney beans
+              milk
+              nutmeg
+              onion
+              sugar
+              unicorn
+              yogurt
+              chocolate
+=== Associator model (full training set) ===
+
+
+Apriori
+=======
+
+Minimum support: 0.1 (72 instances)
+Minimum metric <confidence>: 0.9
+Number of cycles performed: 18
+
+Generated sets of large itemsets:
+
+Size of set of large itemsets L(1): 32
+
+Size of set of large itemsets L(2): 480
+
+Size of set of large itemsets L(3): 2791
+
+Size of set of large itemsets L(4): 1852
+
+Size of set of large itemsets L(5): 4368
+
+Size of set of large itemsets L(6): 3639
+
+Size of set of large itemsets L(7): 17
+
+Best rules found:
+
+ 1. butter=False corn=False sugar=False unicorn=False chocolate=False 91 ==> eggs=False 83    <conf:(0.91)> lift:(1.43) lev:(0.03) [24] conv:(3.66)
+ 2. butter=False cheese=False eggs=False ice cream=False milk=False sugar=False 79 ==> chocolate=False 72    <conf:(0.91)> lift:(1.55) lev:(0.04) [25] conv:(4.08)
+ 3. butter=False cheese=False eggs=False milk=False onion=False sugar=False 79 ==> chocolate=False 72    <conf:(0.91)> lift:(1.55) lev:(0.04) [25] conv:(4.08)
+ 4. apple=False butter=False corn=False sugar=False chocolate=False 88 ==> milk=False 80    <conf:(0.91)> lift:(1.51) lev:(0.04) [27] conv:(3.89)
+ 5. apple=False butter=False dill=False kidney beans=False chocolate=False 86 ==> milk=False 78    <conf:(0.91)> lift:(1.51) lev:(0.04) [26] conv:(3.8)
+ 6. apple=False butter=False corn=False unicorn=False chocolate=False 85 ==> milk=False 77    <conf:(0.91)> lift:(1.5) lev:(0.04) [25] conv:(3.76)
+ 7. butter=False cheese=False corn=False sugar=False chocolate=False 83 ==> milk=False 75    <conf:(0.9)> lift:(1.5) lev:(0.03) [25] conv:(3.67)
+ 8. bread=False butter=False eggs=False ice cream=False milk=False unicorn=False 82 ==> chocolate=False 74    <conf:(0.9)> lift:(1.54) lev:(0.04) [25] conv:(3.76)
+ 9. bread=False butter=False eggs=False ice cream=False sugar=False chocolate=False 82 ==> unicorn=False 74    <conf:(0.9)> lift:(1.47) lev:(0.03) [23] conv:(3.52)
+10. apple=False bread=False butter=False milk=False unicorn=False chocolate=False 81 ==> eggs=False 73    <conf:(0.9)> lift:(1.41) lev:(0.03) [21] conv:(3.25)
+
